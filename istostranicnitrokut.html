@@ -35,41 +35,38 @@
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Dobrodošli na stranicu geometrije</h3>
-  <img src="images/geometrija.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Geometrija" width="350" height="350">
-  <h3>Ovdje možete napraviti osnovne izracune geometrijskoga tipa</h3>
-</div>
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Zanimljive aplikacije</h3><br>
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Istostranični Trokut</h3>
+  <p>
+	  Ovdje možete izračunati opseg i površinu istostraničnog trokuta
+  </p>
   <div class="row">
+  <div class="col-sm-4">
+  </div>
     <div class="col-sm-4">
-		<a href="bmi.html">
-			<p>BM Index</p>
-			<img src="images/aplikacija1.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Geometrija" width="300" height="300">
-		</a>
-    </div>
-    <div class="col-sm-4">
-		<a href="kalkulator.html">
-			<p>Kalkulator</p>
-			<img src="images/aplikacija2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Geometrija" width="300" height="300">
-		</a>
+	<form>
+		<div class="form-group">
+			<label for="vis">Unesi vrijednost stranice a</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="opseg()">Opseg</button>
+		<button type="button" class="btn btn-primary" onclick="povrsina()">Površina</button>
+	<hr>
+		Opseg: <span id="rez1"></span>
+		Površina: <span id="rez2"></span>
+	</form> 
     </div>
 	<div class="col-sm-4">
-		<a href="mjenjacnica.html">
-			<p>Mjenjacnica</p>
-			<img src="images/aplikacija3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Geometrija" width="300" height="300">
-		</a>
-    </div>
+	</div>
   </div>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Napravljeno od Ivo Gulin</p> 
 </footer>
-
+<script src="js/istostranicnitrokut.js"></script>
 </body>
 </html>
