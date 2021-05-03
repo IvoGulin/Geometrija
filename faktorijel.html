@@ -35,41 +35,37 @@
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Dobrodošli na stranicu kvizova</h3>
-  <img src="images/kviz.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Geometrija" width="350" height="350">
-  <h3>Ovdje možete pogledati osnovne kvizove</h3>
-</div>
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Kvizovi</h3><br>
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Faktorijel</h3>
+  <p>
+	  Ovdje možete izračunati faktorijel broja
+  </p>
   <div class="row">
+  <div class="col-sm-4">
+  </div>
     <div class="col-sm-4">
-		<a href="kviz1.html">
-			<p>Kviz geometrija</p>
-			<img src="images/kviz-geometrija.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Kviz 1" width="300" height="300">
-		</a>
-    </div>
-    <div class="col-sm-4">
-		<a href="kviz2.html">
-			<p>Kviz matematika</p>
-			<img src="images/kviz-matematika.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Kviz 2" width="300" height="300">
-		</a>
+	<form>
+		<div class="form-group">
+			<label for="vis">Unesi broj</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="factoriel()">!</button>
+		
+	<hr>
+		Suma: <span id="rez1"></span>
+	</form> 
     </div>
 	<div class="col-sm-4">
-		<a href="kviz3.html">
-			<p>Kviz geometrija i matematika</p>
-			<img src="images/kviz-obadvoje.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Kviz 3" width="300" height="300">
-		</a>
-    </div>
+	</div>
   </div>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Napravljeno od Ivo Gulin</p> 
 </footer>
-
+<script src="js/fact.js"></script>
 </body>
 </html>

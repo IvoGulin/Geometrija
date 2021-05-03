@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <title>Geometrija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Geometrija</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="likovi.html">Likovi</a></li>
+        <li><a href="tijela.html">Tijela</a></li>
+		<li><a href="kvizovi.html">Kvizovi</a></li>
+        <li><a href="o-meni.html">O meni</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-3">    
+  <div class="row">
+    <div class="col-sm-2">
+     
+    </div>
+    <div class="col-sm-8"> 
+      <div>	
+		<h2>Kviz matematika i geometrija</h2>
+		<hr />
+		<form id="kviz" name="kviz">
+		
+		<p>1. Pravokutni trokut katete su 3 i 4 koliko je hipotenuza?</p>
+		<input id="radio" type="radio" name="pitanje01" value="a">3<br>
+		<input id="radio" type="radio" name="pitanje01" value="b">4<br>
+		<input id="radio" type="radio" name="pitanje01" value="c">5<br>
+		<input id="radio" type="radio" name="pitanje01" value="d">6<br>
+		
+		<p>2. Riješi: 12 + x = 33</p>
+		<input id="radio" type="radio" name="pitanje02" value="a">18<br>
+		<input id="radio" type="radio" name="pitanje02" value="b">19<br>
+		<input id="radio" type="radio" name="pitanje02" value="c">20<br>
+		<input id="radio" type="radio" name="pitanje02" value="d">21<br>
+		
+		<p>3. Koliko je 5% pisano u decimalama? </p>
+		<input id="radio" type="radio" name="pitanje03" value="a">0.10<br>
+		<input id="radio" type="radio" name="pitanje03" value="b">0.05<br>
+		<input id="radio" type="radio" name="pitanje03" value="c">0.50<br>
+		<input id="radio" type="radio" name="pitanje03" value="d">0.75<br>
+		
+		<p>4. Što od navedenog nije cijeli broj?</p>
+		<input id="radio" type="radio" name="pitanje04" value="a">-8<br>
+		<input id="radio" type="radio" name="pitanje04" value="b">0<br>
+		<input id="radio" type="radio" name="pitanje04" value="c">12.5<br>
+		<input id="radio" type="radio" name="pitanje04" value="d">125<br>
+		
+		<p>5. Što je kvadratni korijen iz 121?</p>
+		<input id="radio" type="radio" name="pitanje05" value="a">11<br>
+		<input id="radio" type="radio" name="pitanje05" value="b">13<br>
+		<input id="radio" type="radio" name="pitanje05" value="c">15<br>
+		<input id="radio" type="radio" name="pitanje05" value="d">17<br>
+		</form>
+		<hr />
+		<button id="myBtn" onclick="provjeri()">Vaš cjenjeni rezultat</button>
+		<h2 id="brojtocnih"></h2>
+		</div>
+    </div>
+    <div class="col-sm-2"> 
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Napravljeno od Ivo Gulin</p> 
+</footer>
+<script src="js/kviz3.js"></script>
+</body>
+</html>

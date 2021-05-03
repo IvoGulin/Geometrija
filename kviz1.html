@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <title>Geometrija</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Geometrija</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="likovi.html">Likovi</a></li>
+        <li><a href="tijela.html">Tijela</a></li>
+		<li><a href="kvizovi.html">Kvizovi</a></li>
+        <li><a href="o-meni.html">O meni</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-3">    
+  <div class="row">
+    <div class="col-sm-2">
+     
+    </div>
+    <div class="col-sm-8"> 
+      <div>	
+		<h2>Kviz geometrija</h2>
+		<hr />
+		<form id="kviz" name="kviz">
+		
+		<p>1. Koliko trokut ima stranica? </p>
+		<input id="radio" type="radio" name="pitanje01" value="a">2<br>
+		<input id="radio" type="radio" name="pitanje01" value="b">3<br>
+		<input id="radio" type="radio" name="pitanje01" value="c">4<br>
+		<input id="radio" type="radio" name="pitanje01" value="d">5<br>
+
+		<p>2. Koliko kvadrat ima stranica?</p>
+		<input id="radio" type="radio" name="pitanje02" value="a">2<br>
+		<input id="radio" type="radio" name="pitanje02" value="b">3<br>
+		<input id="radio" type="radio" name="pitanje02" value="c">4<br>
+		<input id="radio" type="radio" name="pitanje02" value="d">5<br>
+
+		<p>3. Koliko romb ima dijagonala?</p>
+		<input id="radio" type="radio" name="pitanje03" value="a">2<br>
+		<input id="radio" type="radio" name="pitanje03" value="b">3<br>
+		<input id="radio" type="radio" name="pitanje03" value="c">4<br>
+		<input id="radio" type="radio" name="pitanje03" value="d">5<br>
+		
+		<p>4. Koliko šesterokut ima dijagonala?</p>
+		<input id="radio" type="radio" name="pitanje04" value="a">6<br>
+		<input id="radio" type="radio" name="pitanje04" value="b">7<br>
+		<input id="radio" type="radio" name="pitanje04" value="c">8<br>
+		<input id="radio" type="radio" name="pitanje04" value="d">9<br>
+
+		<p>5. Kako se računa površina trokuta?</p>
+		<input id="radio" type="radio" name="pitanje05" value="a">Baza * Baza<br>
+		<input id="radio" type="radio" name="pitanje05" value="b">Baza * Visina<br>
+		<input id="radio" type="radio" name="pitanje05" value="c">1/2 * Baza * Visina<br>
+		<input id="radio" type="radio" name="pitanje05" value="d">1/4 * Baza * Visina<br>
+		</form>
+		<hr />
+		<button id="myBtn" onclick="provjeri()">Vaš cjenjeni rezultat</button>
+		<h2 id="brojtocnih"></h2>
+		</div>
+    </div>
+    <div class="col-sm-2"> 
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Napravljeno od Ivo Gulin</p> 
+</footer>
+<script src="js/kviz1.js"></script>
+</body>
+</html>
